@@ -1,0 +1,55 @@
+/*Customer ID
+First Name, Last Name
+Email
+Location (City, State, Country)
+Purchase behavior patterns
+Order Data: Simulate order histories for the customers:
+
+Order ID
+Customer ID (link to the customer table)
+Product Name (link to the product table)
+Quantity
+Unit Price
+Order Date
+Order Total
+Return Data: Simulate data for product returns, which is important for understanding customer satisfaction:
+
+Return ID
+Order ID (link to the order table)
+Product Name (link to the product table)
+Return Reason (e.g., “Defective Product,” “Not as Described”)
+Refund Amount*/
+
+/*Customer_data.csv*/
+Customer_ID,First_Name,Last_Name,Email,City,State,Country
+101,John,Doe,john.doe@example.com,New York,NY,USA
+102,Jane,Smith,jane.smith@example.com,Los Angeles,CA,USA
+103,David,Johnson,david.johnson@example.com,Chicago,IL,USA
+104,Emily,Williams,emily.williams@example.com,Houston,TX,USA
+105,Michael,Brown,michael.brown@example.com,Miami,FL,USA
+106,Jessica,Davis,jessica.davis@example.com,Seattle,WA,USA
+107,Daniel,Garcia,daniel.garcia@example.com,Dallas,TX,USA
+108,Elizabeth,Miller,elizabeth.miller@example.com,San Francisco,CA,USA
+109,Matthew,Martinez,matthew.martinez@example.com,Boston,MA,USA
+110,Sophia,Hernandez,sophia.hernandez@example.com,Atlanta,GA,USA
+...
+/*Order_data.csv*/
+Order_ID,Customer_ID,Product_Name,Quantity,Unit_Price,Order_Date,Order_Total
+5001,101,Asus Gaming Laptop,1,1000,2024-08-15,1000
+5002,102,Apple MacBook Pro,1,2000,2024-08-17,2000
+5003,103,Dell Inspiron,2,600,2024-08-18,1200
+5004,104,HP Pavilion,1,800,2024-08-19,800
+5005,105,Lenovo ThinkPad,3,900,2024-08-20,2700
+5006,106,Acer Aspire,1,750,2024-08-21,750
+5007,107,Microsoft Surface,1,1200,2024-08-22,1200
+5008,108,Samsung Galaxy Book,2,850,2024-08-23,1700
+5009,109,Google Pixelbook,1,1000,2024-08-24,1000
+5010,110,Alienware m15,1,1800,2024-08-25,1800
+...
+/*return_data.csv*/
+Return_ID,Order_ID,Product_Name,Return_Reason,Refund_Amount,Return_Date
+9001,5001,Asus Gaming Laptop,Defective Product,1000,2024-08-25
+9002,5002,Apple MacBook Pro,Not as Described,2000,2024-08-27
+9003,5005,Lenovo ThinkPad,Change of Mind,900,2024-08-28
+9004,5008,Samsung Galaxy Book,Defective Product,850,2024-08-30
+9005,5010,Alienware m15,Not as Described,1800,2024-09-01
